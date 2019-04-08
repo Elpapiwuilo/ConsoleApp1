@@ -6,12 +6,25 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            int a = 0;
-            for(a=1; a<=10; a++)
-            {
-                Console.WriteLine("{0}", a);
-                Console.ReadLine();
-            }
+
+
+
+            string nombre, contraseña;
+            int convertir =0;
+   
+            Console.WriteLine("Escriba su numeron nombre");
+            nombre= Console.ReadLine();
+            Console.WriteLine("Escriba su contraseña");
+            contraseña= Console.ReadLine();
+            convertir = Convert.ToInt32(contraseña);
+            Console.WriteLine("Hola bienvenido {0} y su contraseña es: {1}",nombre,convertir);
+         
+            
+          
+           
+
+               Console.ReadLine();
+            
         }
     }
 }
